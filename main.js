@@ -4,9 +4,9 @@ const ch = canvas.height = window.innerHeight;
 const ctx = canvas.getContext("2d");
 
 /* --- INIT --- */
-const gridDim = 41;
+const gridDim = 46;
 const scale = Math.max(0.42,cw/Math.max(cw, 1045));
-const sw = 3 * scale, sh = 20 * scale;
+const sw = 3 * scale, sh = 18 * scale;
 
 let grid = createGrid(gridDim);
 
@@ -14,7 +14,7 @@ let grid = createGrid(gridDim);
 const noLocked = rint(1,4);
 let lockedList = {};  // key: Row, col, val: rotationSpeed
 for(let i = 0; i < noLocked; i++) 
-    lockedList[[Math.round(rint(0,gridDim-1)), Math.round(rint(1,gridDim-1))]] = rint(1.25,2.1);
+    lockedList[[Math.round(rint(0,gridDim-1)), Math.round(rint(1,gridDim-1))]] = rint(3.17,3.72);
 /*--------------*/    
 
 function rint(min, max) { return Math.random() * (max - min) + min; }

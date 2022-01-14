@@ -6,7 +6,7 @@ const ctx = canvas.getContext("2d");
 /* --- INIT --- */
 const gridDim = 41;
 const scale = Math.max(0.42,cw/Math.max(cw, 1045));
-const sw = 2 * scale, sh = 20 * scale;
+const sw = 3 * scale, sh = 20 * scale;
 
 let grid = createGrid(gridDim);
 

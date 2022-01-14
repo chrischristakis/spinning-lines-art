@@ -14,7 +14,7 @@ let grid = createGrid(gridDim);
 const noLocked = rint(1,4);
 let lockedList = {};  // key: Row, col, val: rotationSpeed
 for(let i = 0; i < noLocked; i++) 
-    lockedList[[Math.round(rint(0,gridDim-1)), Math.round(rint(1,gridDim-1))]] = rint(0.65,1.1);
+    lockedList[[Math.round(rint(0,gridDim-1)), Math.round(rint(1,gridDim-1))]] = rint(1.25,2.1);
 /*--------------*/    
 
 function rint(min, max) { return Math.random() * (max - min) + min; }
